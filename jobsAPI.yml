@@ -1,0 +1,79 @@
+openapi: "3.0.2"
+info:
+  title: Jobs
+  version: "1.0"
+servers:
+  - url: https://digitalent.cloud/api
+
+components:
+  schemas:
+    Address:
+      type: object
+      properties:
+        "street":
+          type: string
+        "city":
+          type: string
+        "zip":
+          type: string
+        "province":
+          type: string
+        "region":
+          type: string
+        "state":
+          type: string
+        "country":
+          type: string
+        "coordinates":
+          $ref: "#/components/schemas/GeoCoordinates"
+    GeoCoordinate:
+      type: string
+      example: "47.4708538"
+      pattern: ^(-?\d+(\.\d+)?)
+    GeoCoordinates:
+      type: object
+      properties:
+        "latitude":
+          $ref: "#/components/schemas/GeoCoordinate"
+        "longitude":
+          $ref: "#/components/schemas/GeoCoordinate"
+    JobFamily:
+      type: array
+      maxLength: 2
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+          name:
+            type: string
+            example: "System Engineer"
+    DateTime:
+      type: string
+      format: date-time
+      example: "2022-07-12T11:47:27"
+    Meta:
+      type: object
+      properties:
+        publishDate:
+          $ref: "#/components/schemas/DateTime"
+    Job:
+      type: object
+      properties:
+        id:
+          type: string
+        meta:
+          $ref: "#/components/schemas/Meta"
+
+paths:
+  /jobs:
+    get:
+      responses:
+        "200":
+          description: Get all jobs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Job"
