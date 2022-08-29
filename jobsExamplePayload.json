@@ -1,0 +1,567 @@
+{
+  "Pagination": {
+    "Total": 0,
+    "PageSize": 0,
+    "Page": 0,
+    "Pageable": false
+  },
+  "Data": {
+    "Items": [
+      {
+        "Id": {
+          "Value": "81967c64-4693-4076-a7ee-955d16e63023",
+          "HasValue": true
+        },
+        "Meta": {
+          "PublishDate": {
+            "Value": "12/07/2022 11:47:27",
+            "Raw": "2022-07-12T11:47:27",
+            "HasValue": true
+          },
+          "JobFamily": {
+            "Items": {
+              "MainCategory": {
+                "Key": "2dfc6afa-8ab5-400d-a260-f048bed16673",
+                "Value": "System Engineer",
+                "HasValue": true
+              },
+              "SecondCategory": {
+                "Key": null,
+                "Value": null,
+                "HasValue": false
+              }
+            },
+            "HasValue": true
+          },
+          "Employer": {
+            "PublicId": {
+              "Value": "c5bf7471-0397-4fe2-a977-d42350ba7a49",
+              "HasValue": true
+            },
+            "InternalAccountId": {
+              "Value": null,
+              "HasValue": false
+            },
+            "FullName": {
+              "Value": "digitalent ag",
+              "HasValue": true
+            },
+            "Location": {
+              "HasValue": true,
+              "Street": {
+                "Value": "Mellingerstrasse 40",
+                "HasValue": true
+              },
+              "City": {
+                "Value": "Baden",
+                "HasValue": true
+              },
+              "ZIP": {
+                "Value": "5400",
+                "HasValue": true
+              },
+              "StateProvince": {
+                "Value": null,
+                "HasValue": false
+              },
+              "Region": {
+                "Key": null,
+                "Value": "Region Mittelland (AG / SO)",
+                "HasValue": true
+              },
+              "State": {
+                "Key": null,
+                "Value": "AG",
+                "HasValue": true
+              },
+              "Country": {
+                "Value": "Schweiz",
+                "HasValue": true
+              },
+              "GeoMap": {
+                "HasValue": true,
+                "Latitude": "47.4708538",
+                "Longitude": "8.303645200000005"
+              }
+            },
+            "Logo": {
+              "HasValue": true,
+              "Items": {
+                "default": {
+                  "Value": "https://digitalent.ch/karriere/media/1277/dt_whitetransparent_500px.png",
+                  "HasValue": true
+                }
+              }
+            },
+            "SocialMedia": {
+              "Items": {},
+              "HasValue": false
+            },
+            "HasValue": true
+          },
+          "WorkLocation": {
+            "HasValue": true,
+            "Street": {
+              "Value": null,
+              "HasValue": false
+            },
+            "City": {
+              "Value": "",
+              "HasValue": true
+            },
+            "ZIP": {
+              "Value": null,
+              "HasValue": false
+            },
+            "StateProvince": {
+              "Value": null,
+              "HasValue": false
+            },
+            "Region": {
+              "Key": null,
+              "Value": "ZH",
+              "HasValue": true
+            },
+            "State": {
+              "Key": null,
+              "Value": null,
+              "HasValue": false
+            },
+            "Country": {
+              "Value": "Schweiz",
+              "HasValue": true
+            },
+            "GeoMap": {
+              "HasValue": true,
+              "Latitude": "46.818188",
+              "Longitude": "8.227511999999999"
+            }
+          },
+          "Recruiter": {
+            "RessourceId": "5e83c77e-fbd2-4458-89f2-459a97ab5e6a",
+            "Salutation": {
+              "Value": null,
+              "HasValue": false
+            },
+            "Agency": {
+              "Value": null,
+              "HasValue": false
+            },
+            "FirstName": {
+              "Value": "Anna",
+              "HasValue": true
+            },
+            "LastName": {
+              "Value": "Matoga",
+              "HasValue": true
+            },
+            "Name": {
+              "Value": "Anna Matoga",
+              "HasValue": true
+            },
+            "Email": {
+              "Value": "anna.matoga@digitalent.ch",
+              "HasValue": true
+            },
+            "ImageAlbum": {
+              "HasValue": true,
+              "Items": {
+                "default": {
+                  "Value": "https://digitalent.community/media/1804/anna.png",
+                  "HasValue": true
+                },
+                "square": {
+                  "Value": "https://digitalent.community/media/1804/anna.png?crop=0.097279916987804249,0,0.1347207383716359,0.40143623415158741&cropmode=percentage&width=500&height=500&rnd=132571884780000000",
+                  "HasValue": true
+                },
+                "portrait": {
+                  "Value": "https://digitalent.community/media/1804/anna.png?anchor=center&mode=crop&width=450&height=850&rnd=132571884780000000",
+                  "HasValue": true
+                }
+              }
+            },
+            "HasValue": true
+          },
+          "ImageAlbum": {
+            "HasValue": true,
+            "Items": {
+              "default": {
+                "Value": "https://digitalent.ch/karriere/media/1936/1920bg.png",
+                "HasValue": true
+              },
+              "header-small": {
+                "Value": "https://digitalent.ch/karriere/media/1936/1920bg.png?anchor=center&mode=crop&width=1920&height=465&rnd=132446510560000000",
+                "HasValue": true
+              },
+              "header-big": {
+                "Value": "https://digitalent.ch/karriere/media/1936/1920bg.png?anchor=center&mode=crop&width=1920&height=950&rnd=132446510560000000",
+                "HasValue": true
+              }
+            }
+          },
+          "JobAdURL": {
+            "Language": {
+              "de": {
+                "Value": "https://digitalent.ch/karriere/talentpool",
+                "HasValue": true
+              },
+              "en": {
+                "Value": "https://digitalent.ch/karriere/en/talentpool",
+                "HasValue": true
+              }
+            },
+            "HasValue": true
+          },
+          "Workload": {
+            "HasValue": true,
+            "From": {
+              "Value": "30",
+              "HasValue": true
+            },
+            "To": {
+              "Value": "100",
+              "HasValue": true
+            },
+            "Range": {
+              "Value": "30-100",
+              "HasValue": true
+            }
+          },
+          "JobLevel": {
+            "Value": "Mitarbeiter",
+            "HasValue": true
+          },
+          "Employment": {
+            "Value": "FULL_TIME",
+            "HasValue": true
+          },
+          "Salary": {
+            "HasValue": false,
+            "Amount": null,
+            "Currency": null,
+            "Unit": null
+          },
+          "Language": {
+            "DefaultLanguage": {
+              "Value": "de",
+              "HasValue": true
+            },
+            "LanguageList": {
+              "Value": [
+                {
+                  "Value": "de",
+                  "HasValue": true
+                },
+                {
+                  "Value": "en",
+                  "HasValue": true
+                }
+              ],
+              "HasValue": true
+            },
+            "HasValue": true
+          },
+          "PartnerSetting": {
+            "Items": [
+              {
+                "Name": {
+                  "Value": "Job Channel",
+                  "HasValue": true
+                },
+                "Culture": {
+                  "Value": null,
+                  "HasValue": false
+                },
+                "IsEnabled": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "IsPaid": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "HasValue": true
+              },
+              {
+                "Name": {
+                  "Value": "Applifly",
+                  "HasValue": true
+                },
+                "Culture": {
+                  "Value": null,
+                  "HasValue": false
+                },
+                "IsEnabled": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "IsPaid": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "HasValue": true
+              },
+              {
+                "Name": {
+                  "Value": "Talent.com",
+                  "HasValue": true
+                },
+                "Culture": {
+                  "Value": null,
+                  "HasValue": false
+                },
+                "IsEnabled": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "IsPaid": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "HasValue": true
+              },
+              {
+                "Name": {
+                  "Value": "Indeed",
+                  "HasValue": true
+                },
+                "Culture": {
+                  "Value": null,
+                  "HasValue": false
+                },
+                "IsEnabled": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "IsPaid": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "HasValue": true
+              },
+              {
+                "Name": {
+                  "Value": "Public",
+                  "HasValue": true
+                },
+                "Culture": {
+                  "Value": null,
+                  "HasValue": false
+                },
+                "IsEnabled": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "IsPaid": {
+                  "Value": false,
+                  "HasValue": true
+                },
+                "HasValue": true
+              }
+            ],
+            "Culture": {
+              "Value": "de",
+              "HasValue": true
+            },
+            "HasValue": true
+          },
+          "HasValue": true
+        },
+        "Asset": {
+          "Content": {
+            "Title": {
+              "Language": {
+                "de": {
+                  "Value": "Talentpool",
+                  "HasValue": true
+                },
+                "en": {
+                  "Value": "Talentpool",
+                  "HasValue": true
+                }
+              },
+              "HasValue": true
+            },
+            "Teaser": {
+              "Language": {
+                "de": {
+                  "Value": null,
+                  "HasValue": false
+                },
+                "en": {
+                  "Value": null,
+                  "HasValue": false
+                }
+              },
+              "HasValue": false
+            },
+            "Lead": {
+              "Language": {
+                "de": {
+                  "Value": null,
+                  "HasValue": false
+                },
+                "en": {
+                  "Value": null,
+                  "HasValue": false
+                }
+              },
+              "HasValue": false
+            },
+            "TagList": {
+              "Language": {},
+              "HasValue": false
+            },
+            "Description": {
+              "Language": {
+                "de": {
+                  "Title": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Text": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Additional": {
+                    "Items": null,
+                    "HasValue": false
+                  },
+                  "HasValue": true
+                },
+                "en": {
+                  "Title": {
+                    "Value": "Who we are and what we do",
+                    "HasValue": true
+                  },
+                  "Text": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Additional": {
+                    "Items": null,
+                    "HasValue": false
+                  },
+                  "HasValue": true
+                }
+              },
+              "HasValue": true
+            },
+            "Qualifications": {
+              "Language": {
+                "de": {
+                  "Title": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Text": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Additional": {
+                    "Items": null,
+                    "HasValue": false
+                  },
+                  "HasValue": true
+                },
+                "en": {
+                  "Title": {
+                    "Value": "Why you succeed",
+                    "HasValue": true
+                  },
+                  "Text": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Additional": {
+                    "Items": null,
+                    "HasValue": false
+                  },
+                  "HasValue": true
+                }
+              },
+              "HasValue": true
+            },
+            "Responsibilities": {
+              "Language": {
+                "de": {
+                  "Title": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Text": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Additional": {
+                    "Items": null,
+                    "HasValue": false
+                  },
+                  "HasValue": true
+                },
+                "en": {
+                  "Title": {
+                    "Value": "This is what you'll do",
+                    "HasValue": true
+                  },
+                  "Text": {
+                    "Value": "",
+                    "HasValue": false
+                  },
+                  "Additional": {
+                    "Items": null,
+                    "HasValue": false
+                  },
+                  "HasValue": true
+                }
+              },
+              "HasValue": true
+            },
+            "EducationRequirements": {
+              "Language": {},
+              "HasValue": false
+            },
+            "ExperienceRequirements": {
+              "Language": {},
+              "HasValue": false
+            },
+            "SpecialCommitments": {
+              "Language": {},
+              "HasValue": false
+            },
+            "Call2actionStatement": {
+              "Language": {},
+              "HasValue": false
+            },
+            "ContactStatement": {
+              "Language": {},
+              "HasValue": false
+            },
+            "RecruiterStatement": {
+              "Language": {},
+              "HasValue": false
+            },
+            "HasValue": true
+          },
+          "Benefits": {
+            "Language": {
+              "de": [],
+              "en": [],
+              "fr": []
+            },
+            "HasValue": true
+          },
+          "HasValue": true
+        },
+        "HasValue": true
+      }
+    ],
+    "HasValue": true
+  },
+  "Errors": null,
+  "Notification": [
+    {
+      "Message": "Job Ad Vertical erfolgreich ausgelesen"
+    }
+  ]
+}
