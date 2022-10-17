@@ -1,0 +1,208 @@
+openapi: "3.0.2"
+info:
+  title: Jobs
+  version: "1.0"
+servers:
+  - url: https://digitalent.cloud/api
+
+components:
+  schemas:
+    Address:
+      type: object
+      properties:
+        "street":
+          type: string
+        "city":
+          type: string
+        "zip":
+          type: string
+        "province":
+          type: string
+        "region":
+          type: string
+        "state":
+          type: string
+        "country":
+          type: string
+        "geoCoordinates":
+          $ref: "#/components/schemas/GeoCoordinates"
+    GeoCoordinate:
+      type: string
+      example: "47.4708538"
+      pattern: ^(-?\d+(\.\d+)?)
+    GeoCoordinates:
+      type: object
+      properties:
+        "latitude":
+          $ref: "#/components/schemas/GeoCoordinate"
+        "longitude":
+          $ref: "#/components/schemas/GeoCoordinate"
+    DateTime:
+      type: string
+      format: date-time
+      example: "2022-07-12T11:47:27"
+    Tag:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+    Tags:
+      type: array
+      items:
+        $ref: "#/components/schemas/Tag"
+    TagGroups:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+          items:
+            $ref: "#/components/schemas/Tags"
+    Salary:
+      type: object
+      properties:
+        amount:
+          type: string
+        currency:
+          type: string
+        unit:
+          type: string
+    SalaryRange:
+      type: object
+      properties:
+        min:
+          type: object
+          $ref: "#/components/schemas/Salary"
+        max:
+          type: object
+          $ref: "#/components/schemas/Salary"
+    Employer:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        logo:
+          type: string
+          format: url
+    Range:
+      type: object
+      properties:
+        min:
+          type: number
+        max:
+          type: number
+    RangeFilter:
+      type: object
+      properties:
+        min:
+          type: number
+        max:
+          type: number
+        step:
+          type: number
+    Languages:
+      type: object
+      properties:
+        default:
+          type: string
+          maxLength: 3
+        all:
+          type: array
+          items:
+            type: string
+            maxLength: 3
+    Filter:
+      type: object
+      properties:
+        name:
+          type: string
+        searchable:
+          type: boolean
+        type:
+          type: string
+          enum:
+            - tags
+            - tag-groups
+            - range
+            - amount
+            - custom
+        tags:
+          $ref: "#/components/schemas/Tags"
+        tag-groups:
+          $ref: "#/components/schemas/TagGroups"
+        range:
+          description: "Amount and range type filters must have this property"
+          $ref: "#/components/schemas/RangeFilter"
+    Job:
+      type: object
+      properties:
+        id:
+          type: string
+        datePosted:
+          $ref: "#/components/schemas/DateTime"
+        address:
+          $ref: "#/components/schemas/Address"
+        salary:
+          $ref: "#/components/schemas/SalaryRange"
+        workload:
+          $ref: "#/components/schemas/Range"
+        home-office:
+          $ref: "#/components/schemas/Range"
+        liked:
+          type: boolean
+        languages:
+          $ref: "#/components/schemas/Languages"
+        logo:
+          type: string
+          format: url
+        categories:
+          $ref: "#/components/schemas/Tags"
+        technologies:
+          $ref: "#/components/schemas/Tags"
+        industries:
+          $ref: "#/components/schemas/Tags"
+        company-size:
+          $ref: "#/components/schemas/Tag"
+
+paths:
+  /jobs:
+    get:
+      responses:
+        "200":
+          description: Get all jobs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Job"
+  /filters:
+    get:
+      responses:
+        "200":
+          description: Get all searchable filters and all their possible values
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Filter"
+  /subscribe:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: "Subscription successful"
+          content:
+            application/json:
+              schema:
+                type: string

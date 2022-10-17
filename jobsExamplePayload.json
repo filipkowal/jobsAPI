@@ -80,17 +80,13 @@
     ],
     "description": {
       "title": "Wer braucht Deine Verstärkung?",
-      "mainText": "<p>html markup<p>",
-      "additionalText": "<p>html markup<p>"
+      "body": "<p>html markup<p>",
+      "aside": "<p>html markup<p>"
     },
     "qualifications": "#/compoents/schemas/description",
     "responsibilities": "#/compoents/schemas/description",
     "educationRequirements": "#/compoents/schemas/description",
     "experienceRequirements": "#/compoents/schemas/description",
-    "specialCommitments": "#/compoents/schemas/description",
-    "call2actionStatement": "#/compoents/schemas/description",
-    "contactStatement": "#/compoents/schemas/description",
-    "recruiterStatement": "#/compoents/schemas/description",
     "benefits": [
       {
         "title": "Möglichkeiten zur Weiterbildung in internen Kompetenzteams",
